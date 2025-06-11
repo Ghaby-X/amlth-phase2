@@ -23,6 +23,10 @@ if __name__ == "__main__":
             if endpoint:
                 endpoint_count[endpoint] = endpoint_count.get(endpoint, 0) + 1
 
-    print(endpoint_count)
+    print("================ Endpoint Counts ================")
+    for k, v in endpoint_count.items():
+        print('Endpoint: ', k)
+        print('Count: ', v)
+        print("\n")
             
             

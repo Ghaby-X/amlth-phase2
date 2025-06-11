@@ -22,5 +22,8 @@ if __name__ == "__main__":
 
 
     # print user agents and their count
+    print("======== Agent types and their counts =========")
     for k, v in agent_type_count.items():
-        print(f"{k}: {v}")
+        print("Agent: ", k)
+        print("count: ", v)
+        print("\n")

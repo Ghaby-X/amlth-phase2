@@ -66,8 +66,11 @@ if __name__ == "__main__":
     count_dict = ip_count_n_window(sorted_log, 10) 
 
     # format and print count_dict
+    print("======== IP addresses and their counts within 10 seconds =========")
     for ip, count in count_dict.items():
-        print(f"{ip}: {count}")
+        print("IP address: ", ip)
+        print("Count: ", count)
+        print("\n")
 
 
     

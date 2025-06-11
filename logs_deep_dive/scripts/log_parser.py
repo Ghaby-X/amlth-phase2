@@ -31,4 +31,8 @@ if __name__ == "__main__":
                 else:
                     unique_ip_count[cur_ip] = 1
     
-    print(unique_ip_count)
+    print("======== Unique IP addresses and their counts =========")
+    for k, v in unique_ip_count.items():
+        print("IP address: ", k)
+        print("Count: ", v)
+        print("\n")
