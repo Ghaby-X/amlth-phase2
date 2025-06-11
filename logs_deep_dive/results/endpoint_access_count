@@ -1,0 +1,7 @@
+================ Endpoint Counts ================
+Endpoint:  GET /favicon.ico HTTP/1.1
+Count:  316
+
+
+Endpoint:  GET / HTTP/1.1
+Count:  408

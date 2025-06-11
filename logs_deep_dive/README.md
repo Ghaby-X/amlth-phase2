@@ -10,12 +10,14 @@ This project provides tools to analyze web server logs for various metrics inclu
 - Endpoint access counting
 - User agent identification
 
-### Prerequisites
+### Requirements
 
 - python3.12
 
 
 ## Scripts
+
+Sample results can be viewed in the results directory
 
 ### ten_second_window.py
 
@@ -81,12 +83,18 @@ Example:
 
 ## Usage
 
-1. Place your log file in the project root directory as `sample.log`
-2. Run the scripts from the project root directory:
+1. Clone the repository
+
+```
+git clone https://github.com/Ghaby-X/amlth-phase2.git
+```
+
+2. Place your log file in the project root directory as `sample.log`
+3. Run the scripts from the project root directory:
 
 ```bash
 # Navigate to the project root directory first
-cd /home/ghaby/projects/logs_deep_dive
+cd /amlth-phase2/logs_deep_dive
 
 # Then run the scripts
 python3.12 scripts/ten_second_window.py
@@ -96,8 +104,3 @@ python3.12 scripts/request_from_agent_type.py
 ```
 
 Note: The scripts expect the log file to be in the same directory from which you run the script. If you run the scripts from another directory, you'll need to provide the full path to the log file or modify the scripts to use the correct path.
-
-## Requirements
-
-- Python 3.6+
-- No external dependencies required
