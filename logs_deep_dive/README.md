@@ -10,6 +10,11 @@ This project provides tools to analyze web server logs for various metrics inclu
 - Endpoint access counting
 - User agent identification
 
+### Prerequisites
+
+- python3.12
+
+
 ## Scripts
 
 ### ten_second_window.py
@@ -17,7 +22,7 @@ This project provides tools to analyze web server logs for various metrics inclu
 Analyzes logs to identify IP addresses that make multiple requests within a 10-second window. This can be useful for detecting potential DoS attacks or aggressive crawlers.
 
 ```bash
-python scripts/ten_second_window.py
+python3.12 scripts/ten_second_window.py
 ```
 
 Key features:
@@ -31,7 +36,7 @@ Key features:
 Parses log files to count unique IP addresses and their request frequencies.
 
 ```bash
-python scripts/log_parser.py
+python3.12 scripts/log_parser.py
 ```
 
 Key features:
@@ -43,7 +48,7 @@ Key features:
 Analyzes which endpoints are being accessed and how frequently.
 
 ```bash
-python scripts/endpoint_access_count.py
+python3.12 scripts/endpoint_access_count.py
 ```
 
 Key features:
@@ -55,7 +60,7 @@ Key features:
 Identifies and counts requests by user agent type.
 
 ```bash
-python scripts/request_from_agent_type.py
+python3.12 scripts/request_from_agent_type.py
 ```
 
 Key features:
@@ -84,10 +89,10 @@ Example:
 cd /home/ghaby/projects/logs_deep_dive
 
 # Then run the scripts
-python scripts/ten_second_window.py
-python scripts/log_parser.py
-python scripts/endpoint_access_count.py
-python scripts/request_from_agent_type.py
+python3.12 scripts/ten_second_window.py
+python3.12 scripts/log_parser.py
+python3.12 scripts/endpoint_access_count.py
+python3.12 scripts/request_from_agent_type.py
 ```
 
 Note: The scripts expect the log file to be in the same directory from which you run the script. If you run the scripts from another directory, you'll need to provide the full path to the log file or modify the scripts to use the correct path.
